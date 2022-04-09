@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"manager","l":"Flat"},{"p":"manager","l":"Guest"},{"p":"manager","l":"Hotel"},{"p":"manager","l":"House"},{"p":"manager","l":"Office"},{"p":"manager","l":"PropertyOwner"},{"p":"manager","l":"Room"},{"p":"manager","l":"SecuredAccess"},{"p":"manager","l":"Tenant"}];updateSearchResults();

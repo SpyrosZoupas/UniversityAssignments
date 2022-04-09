@@ -1,0 +1,174 @@
+:root {
+    --clr-primary: #f1361e;
+    --clr-secondary: #fff;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--clr-secondary);
+    font-family: 'Roboto', sans-serif;
+}
+
+a { text-decoration: none }
+li { list-style: none }
+
+
+/* Navbar */
+.logo {
+    margin-left: 1.5em;
+    position: absolute;
+    left: 0;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size:1.2em;
+    border-style: solid;
+    border-width: .1em;
+    border-color: var(--clr-secondary);
+    padding: 0.2em;
+    
+}
+
+.logo .flex {
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-template-columns: 4;
+    grid-template-rows: 0;
+    background-color: var(--clr-primary);
+    padding: 1em 0 1em 0;
+    z-index: 100;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1em;
+}
+
+.account-status {
+    margin: 0 2em 0 2em;
+    display: flex;
+    font-size: 1.25em;
+}
+
+.account-status .register {
+    margin-right: 1em;
+}
+
+.account-status .login {
+    color: inherit;
+}
+
+/* Underline buttons with btn-underline tag*/
+.btn-underline {
+    position: relative;
+    text-decoration: none;
+    color: var(--complimentary-clr);
+}
+
+.btn-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in;
+    transform-origin: right;
+}
+  
+.btn-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* index.html */
+
+.hero {
+    background-image: url(../assets/hero.jpg);
+    background-size: cover;
+}
+
+.hero-left {
+    display: block;
+    margin: auto;
+    padding: 20rem 0 20rem 5rem;
+    background-color: rgba(71, 29, 5, 0.7);
+}
+
+.hero-left--title {
+    font-size: 2.25em;
+    text-transform: uppercase;
+    
+}
+
+.hero-left .slimlined {
+    font-weight: 400;
+}
+
+.hero-left--subtext {
+   margin: 1em 0 1.5em 0;
+   font-weight: normal;
+   max-width: 80%;
+}
+
+.hero-right {
+    height: inherit;
+    width: 50%;
+}
+
+.hero-left--buttons {
+    display: flex;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.hero-left--button a {
+    padding: 0.6em;
+    outline: solid;
+}
+
+.more-info a {
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+    outline-color: var(--clr-primary);
+}
+
+.register a {
+    margin-left: 1em;
+    outline-width: 0.2em;
+    outline-color: var(--clr-primary);
+    color: var(--clr-primary);
+}
+
+.register a:hover {
+    background-color: var(--clr-primary);
+    outline-color: var(--clr-primary);
+    color: var(--clr-secondary);
+}
+
+.more-info a:hover {
+    background-color: var(--clr-secondary);
+    outline-color: var(--clr-secondary);
+    color: var(--clr-primary);
+}
+
+.hero {
+    display: flex;
+    flex-wrap: nowrap;
+}
